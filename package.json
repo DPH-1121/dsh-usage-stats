@@ -1,9 +1,13 @@
 {
   "name": "dsh-usage-stats",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
   "description": "Harness token-usage report: provider-reported tokens folded out of this harness's session logs across dsh 0.1.6/0.1.7 session-format generations, backed by a grow-only per-session ledger so deleting a session no longer deletes its usage",
   "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.1.6-alpha.1 <0.1.7-0 || >=0.1.7-alpha.0 <0.2.0-0 || >=0.2.0-rc.1 <0.2.1-0 || >=0.2.1-rc.2 <0.3.0-0"
+  },
   "license": "MIT",
   "main": "./lib/index.js",
   "exports": {
@@ -31,11 +35,11 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.2.0-0",
+    "@deepseek-ai/dsh": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.3.0-0",
     "@deepseek-ai/cordis": ">=4.0.2 <5.0.0",
-    "@deepseek-ai/dsh-client-locale": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.2.0-0",
-    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.2.0-0",
-    "@deepseek-ai/dsh-client-ui-slots": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.2.0-0",
+    "@deepseek-ai/dsh-client-locale": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-slots": ">=0.1.6-alpha.1 <0.2.0-0 || >=0.1.7-alpha.0 <0.3.0-0",
     "react": "^18.2.0"
   },
   "peerDependenciesMeta": {
